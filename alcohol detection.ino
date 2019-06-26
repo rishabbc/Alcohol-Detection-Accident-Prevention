@@ -97,13 +97,13 @@ void loop()
       lcd.setCursor(0,0);
       lcd.print("FAMILY MEMBERS");
       lcd.setCursor(0,1);
-      lcd.print("PH NO:9611623201");
+      lcd.print("PH NO:XXXXXXXXXX");
       delay(3000);
       lcd.clear();
       lcd.setCursor(0,0);
       lcd.print("AND ");
       lcd.setCursor(0,1);
-      lcd.print("PH NO:7795112145");
+      lcd.print("PH NO:XXXXXXXXXX");
       delay(3000);
       lcd.clear();
       lcd.setCursor(0,0);
@@ -130,7 +130,7 @@ void alcoholDetected()
       gsmSerial.begin(9600);
       gsmSerial.println("AT+CMGF=1");
       delay(1000);
-      gsmSerial.println("AT+CMGS=\"+919611623201\"\r");
+      gsmSerial.println("AT+CMGS=\"+91XXXXXXXXXX\"\r");
       delay(1000);
       Serial.println(sms);
       gsmSerial.println(sms);
@@ -141,7 +141,7 @@ void alcoholDetected()
   
       delay(5000);
       gsmSerial.begin(9600);
-      gsmSerial.println("AT+CMGS=\"+917795112145\"\r");
+      gsmSerial.println("AT+CMGS=\"+91XXXXXXXXXX\"\r");
       delay(1000);
       Serial.println(sms);
       gsmSerial.println(sms);
